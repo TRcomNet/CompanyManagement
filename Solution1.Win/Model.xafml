@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="rell.svg" Description="TEST" ProtectedContentText="test">
+  <BOModel>
+    <Class Name="Solution1.Module.BusinessObjects.Category" DefaultDetailViewImage="" ImageName="BO_Category" />
+    <Class Name="Solution1.Module.BusinessObjects.City" ImageName="BO_Address" />
+    <Class Name="Solution1.Module.BusinessObjects.Company" ImageName="BO_Address" />
+    <Class Name="Solution1.Module.BusinessObjects.Country" ImageName="BO_Address" />
+    <Class Name="Solution1.Module.BusinessObjects.County" ImageName="BO_Country_v92" />
+    <Class Name="Solution1.Module.BusinessObjects.Customer" ImageName="BO_Customer" />
+    <Class Name="Solution1.Module.BusinessObjects.Department" ImageName="BO_Department" />
+    <Class Name="Solution1.Module.BusinessObjects.Employee" ImageName="BO_Employee" />
+    <Class Name="Solution1.Module.BusinessObjects.Organization" ImageName="BO_Organization" />
+    <Class Name="Solution1.Module.BusinessObjects.Position" ImageName="BO_Position" />
+    <Class Name="Solution1.Module.BusinessObjects.Product" ImageName="BO_Product" />
+    <Class Name="Solution1.Module.BusinessObjects.ProductGroup" ImageName="BO_Product_Group" />
+  </BOModel>
+  <NavigationItems NavigationStyle="TreeList" ShowImages="True" DefaultChildItemsDisplayStyle="List" StartupNavigationItem="Employee_ListView">
+    <Items>
+      <Item Id="Default" Caption="Menu">
+        <Items>
+          <Item Id="Department_ListView" ImageName="BO_Department" />
+          <Item Id="Employee_ListView" ImageName="BO_Employee" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options UIType="SingleWindowSDI" FormStyle="Standard" ShowTabImage="False" Skin="DevExpress Style">
+    <LayoutManagerOptions EnableLayoutGroupImages="False" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="19.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="19.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="City_Counties_ListView">
+      <Columns>
+        <ColumnInfo Id="City" Width="82" />
+        <ColumnInfo Id="Customer" Width="82" Index="-1" />
+        <ColumnInfo Id="Oid" Width="58" />
+        <ColumnInfo Id="CountyName" Width="467" />
+        <ColumnInfo Id="CountyCode" Width="82" />
+      </Columns>
+    </ListView>
+    <DetailView Id="City_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="9.1515729265967583">
+            <LayoutGroup Id="City" RelativeSize="100">
+              <LayoutItem Id="CityName" RelativeSize="37.5" />
+              <LayoutItem Id="CityCode" RelativeSize="27.083333333333332" />
+              <LayoutItem Id="Country" Index="2" RelativeSize="35.416666666666664" />
+              <LayoutItem Id="Customer" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="93.326978074356532" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Counties_Group" TextAlignMode="AlignWithChildren" Direction="Vertical" RelativeSize="90.848427073403244">
+            <LayoutItem Id="Counties" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="City_ListView">
+      <Columns>
+        <ColumnInfo Id="Customer" SortIndex="0" SortOrder="Ascending" Index="-1" />
+        <ColumnInfo Id="CityName" SortIndex="-1" SortOrder="None" Width="267" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Company_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="9.7235462345090564">
+            <LayoutGroup Id="Company" RelativeSize="100">
+              <LayoutItem Id="CompanyName" RelativeSize="35.294117647058826" />
+              <LayoutItem Id="CompanyCode" RelativeSize="25.490196078431371" />
+              <LayoutGroup Id="Company_col1" ShowCaption="False" TextAlignMode="AlignWithChildren" Index="2" RelativeSize="39.215686274509807">
+                <LayoutItem Id="Active" Index="0" RelativeSize="100" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="90.276453765490942">
+            <LayoutGroup Id="Customers" TextAlignMode="AlignWithChildren" RelativeSize="100">
+              <LayoutItem Id="Customers" TextAlignMode="AutoSize" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Organizations" TextAlignMode="AlignWithChildren" RelativeSize="100">
+              <LayoutItem Id="Organizations" TextAlignMode="AutoSize" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Employees" TextAlignMode="AlignWithChildren" RelativeSize="100">
+              <LayoutItem Id="Employees" TextAlignMode="AutoSize" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Country_Cities_ListView">
+      <Columns>
+        <ColumnInfo Id="Country" Width="82" />
+        <ColumnInfo Id="Customer" Width="82" Index="-1" />
+        <ColumnInfo Id="Oid" Width="58" />
+        <ColumnInfo Id="CityName" Width="467" />
+        <ColumnInfo Id="CityCode" Width="82" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Country_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="6.67302192564347">
+            <LayoutGroup Id="Country" RelativeSize="100">
+              <LayoutItem Id="CountryName" RelativeSize="51.428571428571431" />
+              <LayoutItem Id="CountryCode" RelativeSize="48.571428571428569" />
+              <LayoutItem Id="Customer" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="96.626506024096386" Removed="True" />
+          </LayoutGroup>
+          <LayoutGroup Id="Cities_Group" TextAlignMode="AlignWithChildren" Direction="Vertical" RelativeSize="93.326978074356532">
+            <LayoutItem Id="Cities" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Country_ListView">
+      <Columns>
+        <ColumnInfo Id="Customer" Index="-1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="County_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="County" RelativeSize="3.3734939759036147">
+              <LayoutItem Id="Customer" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="96.626506024096386" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="County_ListView">
+      <Columns>
+        <ColumnInfo Id="Customer" Index="-1" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Department_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Department" RelativeSize="3.2771084337349397">
+              <LayoutItem Id="DepartmentName" RelativeSize="52.941176470588232" />
+              <LayoutItem Id="Active" Index="1" RelativeSize="47.058823529411768" />
+              <LayoutItem Id="Employee" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" RelativeSize="96.722891566265062" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Department_ListView">
+      <Columns>
+        <ColumnInfo Id="Employee" Index="-1" />
+        <ColumnInfo Id="Active" Index="1" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

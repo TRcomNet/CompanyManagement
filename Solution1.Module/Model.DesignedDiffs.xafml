@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Test" Company="TEST" Logo="rell.jpg" Copyright="2020" Description="The Test Application">
+  <BOModel>
+    <Class Name="Solution1.Module.BusinessObjects.Department" ImageName="BO_Department" />
+    <Class Name="Solution1.Module.BusinessObjects.Employee" ImageName="BO_Employee" />
+  </BOModel>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="Department_ListView" ImageName="" />
+          <Item Id="Employee_ListView" ImageName="" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="19.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Category_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Category" RelativeSize="8.2666666666666675">
+              <LayoutItem Id="CategoryName" RelativeSize="51.612903225806448" />
+              <LayoutItem Id="Active" RelativeSize="48.387096774193552" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="91.733333333333334">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="City_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="City" RelativeSize="11.466666666666667">
+              <LayoutItem Id="Name" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Code" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Customer" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="88.533333333333331">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Company_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Company" RelativeSize="16.133333333333333">
+              <LayoutGroup Id="Company_col1" RelativeSize="50">
+                <LayoutItem Id="Name" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Code" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Active" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="Company_col2" RelativeSize="50">
+                <LayoutItem Id="Customer" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Organization" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Employee" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="83.86666666666666">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Country_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Country" RelativeSize="11.466666666666667">
+              <LayoutItem Id="Name" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Code" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Customer" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="88.533333333333331">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="County_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="County" RelativeSize="11.466666666666667">
+              <LayoutItem Id="Name" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Code" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Customer" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="88.533333333333331">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Customer_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26.533333333333335">
+            <LayoutGroup Id="Customer" RelativeSize="100">
+              <LayoutGroup Id="Customer_col1" RelativeSize="50">
+                <LayoutItem Id="Name" RelativeSize="20" />
+                <LayoutItem Id="MobilePhone" RelativeSize="15" />
+                <LayoutItem Id="Address" RelativeSize="15" />
+                <LayoutItem Id="Phone" RelativeSize="15" />
+                <LayoutItem Id="Fax" RelativeSize="15" />
+                <LayoutItem Id="TaxNumber" RelativeSize="20" />
+              </LayoutGroup>
+              <LayoutGroup Id="Customer_col2" RelativeSize="50">
+                <LayoutItem Id="TaxOffice" RelativeSize="20" />
+                <LayoutItem Id="Email" RelativeSize="15" />
+                <LayoutItem Id="ContactPerson" RelativeSize="15" />
+                <LayoutItem Id="CustomerKey" RelativeSize="15" />
+                <LayoutItem Id="CustomerCode" RelativeSize="15" />
+                <LayoutItem Id="Active" RelativeSize="20" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="48.533333333333331" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="73.466666666666669">
+            <LayoutGroup Id="Company" RelativeSize="100">
+              <LayoutItem Id="Company" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="City" RelativeSize="100">
+              <LayoutItem Id="City" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Country" RelativeSize="100">
+              <LayoutItem Id="Country" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="County" RelativeSize="100">
+              <LayoutItem Id="County" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Department_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Department" RelativeSize="11.466666666666667">
+              <LayoutItem Id="DepartmentName" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Employee" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Active" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="88.533333333333331">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Employee_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="20.133333333333333">
+            <LayoutGroup Id="Employee" RelativeSize="100">
+              <LayoutGroup Id="Employee_col1" RelativeSize="50">
+                <LayoutItem Id="FirstName" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="LastName" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="BirthDate" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Email" RelativeSize="28.571428571428573" />
+              </LayoutGroup>
+              <LayoutGroup Id="Employee_col2" RelativeSize="50">
+                <LayoutItem Id="Phone" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="Photo" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="Active" RelativeSize="50" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="61.333333333333336" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="79.86666666666666">
+            <LayoutGroup Id="Departments" RelativeSize="100">
+              <LayoutItem Id="Departments" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Company" RelativeSize="100">
+              <LayoutItem Id="Company" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Organization_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="8.2666666666666675">
+            <LayoutGroup Id="Organization" RelativeSize="100">
+              <LayoutItem Id="OrganizationName" RelativeSize="51.612903225806448" />
+              <LayoutItem Id="Active" RelativeSize="48.387096774193552" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="83.466666666666669" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Company_Group" Direction="Vertical" RelativeSize="91.733333333333334">
+            <LayoutItem Id="Company" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Position_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Position" RelativeSize="11.466666666666667">
+              <LayoutItem Id="Name" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="WorkDescription" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Active" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="88.533333333333331">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Product_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Product" RelativeSize="16.133333333333333">
+              <LayoutGroup Id="Product_col1" RelativeSize="50">
+                <LayoutItem Id="Name" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Code" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Type" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="Product_col2" RelativeSize="50">
+                <LayoutItem Id="Active" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="ProductGroup" RelativeSize="63.636363636363633" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="83.86666666666666">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="ProductGroup_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="14.666666666666666">
+            <LayoutGroup Id="ProductGroup" RelativeSize="100">
+              <LayoutItem Id="Name" RelativeSize="29.09090909090909" />
+              <LayoutItem Id="GroupCode" RelativeSize="21.818181818181817" />
+              <LayoutItem Id="Type" RelativeSize="21.818181818181817" />
+              <LayoutItem Id="Active" RelativeSize="27.272727272727273" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="70.666666666666671" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Products_Group" Direction="Vertical" RelativeSize="85.333333333333329">
+            <LayoutItem Id="Products" RelativeSize="100" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
